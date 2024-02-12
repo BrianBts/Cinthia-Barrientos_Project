@@ -1,0 +1,49 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "../components/Badge.astro"
+import LinkedInIcon from "../components/icons/Link.astro"
+import MailIcon from "../components/icons/Link.astro"
+import SocialPill from "../components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://scontent.faep28-1.fna.fbcdn.net/v/t1.6435-9/116282513_10217806627057117_3985256309827782476_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeGe0zaivubMZ_jdW5NAt4TIfKarC0Mz7Ld8pqsLQzPstxXi4XSkq_d00xzwvKgK795ZVAeFQPMaeup8PFNgXSh1&_nc_ohc=vYl-wJfe2I8AX-nYAW8&_nc_ht=scontent.faep28-1.fna&oh=00_AfBCHbJwN2WlnqbEfPpwypGE4wB3jZpd2sODoMQ2uo0GrA&oe=65F1BC9C"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/midudev"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Agenda 2024 Disponible</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola,<br> Soy Cinthia Barrientos
+  </h1>
+  <p
+  class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-pink-400 [&>strong]:text-pink-500 [&>strong]:font-semibold dark:text-gray-300"
+>
+  +10 años de experiencia. <strong
+    >Artista Muralista y Creadora especializada en Estilo Botánico</strong
+  > de Argentina 🇦🇷. <br> Dedicada a la creación de obras de arte únicas
+  que capturan la esencia y belleza de la naturaleza.
+</p>
+
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="cinthiabtss@gmail.com">
+      <MailIcon class="size-4" />
+      Mail
+    </SocialPill>
+    <SocialPill href="https://www.instagram.com/cinthia.bts/">
+      <LinkedInIcon class="size-4" />
+      Instagram
+    </SocialPill>
+  </nav>
+</div>

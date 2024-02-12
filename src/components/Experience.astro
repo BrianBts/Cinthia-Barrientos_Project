@@ -1,0 +1,44 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Provincia/País",
+    company: "Motivo",
+    description:
+      "Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion ",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Provincia/País",
+    company: "Motivo",
+    description:
+      "Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion ",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Provincia/País",
+    company: "Motivo",
+    description:
+      "Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion ",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Provincia/País",
+    company: "Motivo",
+    description:
+      "Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion ",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

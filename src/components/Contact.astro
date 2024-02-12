@@ -1,0 +1,29 @@
+---
+// Aquí puedes incluir lógica JavaScript si necesitas manejar el envío del formulario
+// Por ahora, dejaremos esto en blanco ya que estamos enfocándonos en el HTML y CSS
+---
+<div class="flex flex-col items-center justify-center">
+    <h1 class="text-2xl font-bold text-gray-800 dark:text-white mb-8">¡Hablemos!</h1>
+    <form class="flex flex-col gap-4 w-full max-w-md p-4" action="/tu-endpoint-de-envio" method="POST">
+      
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+        <input type="text" id="name" name="name" required class="mt-1 p-2 w-full border border-pink-300 rounded-md shadow-sm bg-transparent">
+      </div>
+    
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+        <input type="email" id="email" name="email" required class="mt-1 p-2 w-full border border-pink-300 rounded-md shadow-sm bg-transparent">
+      </div>
+    
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+        <textarea id="message" name="message" rows="4" required class="mt-1 p-2 w-full border border-pink-300 rounded-md shadow-sm bg-transparent"></textarea>
+      </div>
+    
+      <button type="submit" class="mt-4 py-2 px-4 bg-pink-500 border-2 border-pink-500 text-white font-bold rounded-md hover:bg-pink-700">
+        Enviar
+      </button>
+    </form>
+  </div>
+  
